@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 //create a fn
 const connectDB = (uri) =>{
     //return to uri using .connect method
-    console.log("Connected Motherfuckerrrrrrrr");
+    console.log("Connected");
     return mongoose.connect(uri,
         {
             useNewUrlParser: true ,

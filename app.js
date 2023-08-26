@@ -7,7 +7,7 @@ const connectDB =require('./db/connect');
 
 const product_routes =require('./routes/product');
 app.get("/", (req, res)=>{
-    res.send("Hey, i am connected")
+    res.redirect("/api/products")
 });
 
 app.use("/api/products" , product_routes);
