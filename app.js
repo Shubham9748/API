@@ -26,4 +26,11 @@ const start = async() => {
     }
 }
 
+const detailed_Product = require('./routes/detailedProduct');
+
+app.get("/detailedProduct", (req, res) =>{
+    res.redirect("/api/detailedProduct")
+});
+app.use("/api/products", detailed_Product);
+
 start();
